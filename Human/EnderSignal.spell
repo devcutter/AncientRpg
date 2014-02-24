@@ -1,0 +1,6 @@
+EnderSignal
+Passive
+chatcommand: effect_endersignal
+permission: effect.permission
+SendMessage, Player, Effect activated!
+playeffect, Player, endersignal

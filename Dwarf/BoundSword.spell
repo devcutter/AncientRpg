@@ -1,0 +1,19 @@
+BoundSword
+active
+variables: cooldown
+Cooldown, boundweap, 70000
+if, (GetItemInHands) != 268
+CheckCooldown, boundweap
+if, (GetItemInHands) != 268
+AddItem, Player, 268, 1
+SendMessage, Player, A sword becomes bound to your soul
+endif
+Wait, 60000
+if, (GetItemCount, Player, 268) < 1
+Damage, Player, 20
+SendMessage, Player, Your sword was not returned and the realm of magic punishes you
+endif
+if, (GetItemCount, Player, 268) >= 1
+RemoveItem, Player, 268, 1, false
+SendMessage, Player, Your sword fades and its power is returned
+endif

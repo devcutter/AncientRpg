@@ -1,0 +1,12 @@
+Quickshot
+active
+minlevel: 1
+CheckCooldown, quickshot
+if, (GetItemCount, Player, 262) >= 1
+RemoveItem, Player, 262, 1, true
+ShootArrow, Player
+Cooldown, quickshot, 10000
+endif
+if, (GetItemCount, Player, 262) == 0
+SendMessage, Player, You need at least 1 arrow for a quickshot.
+endif

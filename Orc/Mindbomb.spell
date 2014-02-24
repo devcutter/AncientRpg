@@ -1,0 +1,8 @@
+Mindbomb
+active
+CheckCooldown, mindbombcooldown
+BuffForTime, Player, mindbombbuff, 20000
+SendMessage, nearestPlayers:126:999, A mindbomb is being prepared nearby!
+Cooldown, mindbombcooldown, 60000
+Wait, 5000
+Fireball

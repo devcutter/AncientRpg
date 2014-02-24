@@ -1,0 +1,4 @@
+DeathNote
+passive
+playerDeathEvent
+BuffForTime, Partymembers:64:50, DeathNoteBuff, 15000

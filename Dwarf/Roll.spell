@@ -1,0 +1,7 @@
+Roll
+active
+CheckCooldown, rollcooldown
+Speedup, Player, 500
+Wait, 500
+Slow, Player, 500
+Cooldown, rollcooldown, 3000

@@ -1,0 +1,5 @@
+DeathNoteBuff
+buff
+moveEvent
+RemoveBuff, Player, DeathNoteBuff
+Cooldown, DeathNoteCooldown, 30

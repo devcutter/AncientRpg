@@ -1,0 +1,6 @@
+potionbreak
+Passive
+chatcommand: effect_potionbreak
+permission: effect.permission
+SendMessage, Player, Effect activated!
+playeffect, Player, potionbreak

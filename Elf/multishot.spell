@@ -1,0 +1,21 @@
+Multishot
+active
+minlevel: 1
+CheckCooldown, multishot
+if, (GetItemCount, Player, 261) >= 1
+if, (GetItemCount, Player, 262) >= 3
+RemoveItem, Player, 262, 3, true
+ShootArrow, Player
+Wait, 100
+ShootArrow, Player
+Wait, 100
+ShootArrow, Player
+Cooldown, multishot, 30000
+endif
+endif
+if, (GetItemCount, Player, 262) < 3
+SendMessage, Player, You need at least 3 arrows for a multishot.
+endif
+if, (GetItemCount, Player, 261) < 1
+SendMessage, Player, You need a bow to use multishot.
+endif

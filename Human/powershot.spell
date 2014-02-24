@@ -1,0 +1,10 @@
+PowerShot
+passive
+attackEvent
+minlevel: 1
+if, (GetAttacker) == arrow
+if, (GetRandom) >= 90
+DamageModify, 200
+SendMessage, Player, Critical hit!
+endif
+endif

@@ -1,0 +1,6 @@
+Zombie_Chew_iron_door
+Passive
+chatcommand: effect_Zombiechewirondoor
+permission: effect.permission
+SendMessage, Player, Noise playing!
+playeffect, Player, Zombiechewirondoor

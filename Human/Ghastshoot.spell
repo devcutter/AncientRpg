@@ -1,0 +1,6 @@
+Ghastshoot
+Passive
+chatcommand: effect_ghastshoot
+permission: effect.permission
+SendMessage, Player, Noise playing!
+playeffect, Player, ghastshoot

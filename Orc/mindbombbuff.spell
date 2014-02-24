@@ -1,0 +1,6 @@
+mindbombbuff
+buff
+projectileHitEvent
+if, (GetProjectileName) == Fireball
+endif
+Explosion, (GetProjectileHitLocation), 1
