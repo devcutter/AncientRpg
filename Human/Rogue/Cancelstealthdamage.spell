@@ -1,0 +1,7 @@
+Cancelstealthdamage
+passive:5
+damageevent
+minlevel: 1
+if, (IsInvisible, Player)  ==  true
+SetInvisible, Player, false
+endif

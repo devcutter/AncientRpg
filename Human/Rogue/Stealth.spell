@@ -1,0 +1,7 @@
+Stealth
+active
+minlevel: 5
+CheckCooldown, "stealth"
+Cooldown, "stealth", 60000
+SetInvisible, Player, true
+SendMessage, Player, "you are invisible"

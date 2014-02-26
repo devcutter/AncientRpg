@@ -1,0 +1,6 @@
+cancelstealth
+passive:5
+attackevent
+if, (IsInvisible)  ==  true
+SetInvisible, Player, false
+endif
