@@ -1,0 +1,11 @@
+ShadowStep
+active
+variables: loc
+minlevel: 45
+var loc = NearestPlayer
+if, (IsCooldownReady, "ShadowStep")  ==  false
+if, (IsInvisible, Player)  ==  true
+Teleport, loc
+Cooldown, "ShadowStep", 60000
+endif
+endif
